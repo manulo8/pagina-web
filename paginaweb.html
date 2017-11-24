@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>WEb HTML y CSS</title>
+<link rel="stylesheet" type="text/css" href="ejemplo1.css" title="miEjemplo" media="all" />
+</head>
+<body>
+<style>
+* { margin: auto; padding: 0; font-family: arial;  }
+
+/*body: cuerpo de la página*/
+body { background-color: #f4d4d3; }
+
+/*cabecera*/
+header { background-color: #fffafa; }
+header h1 { text-align: center; color: navy; padding: 0.5em; font-size: 1.5em; }
+header h2 { text-align: center; color: #663366; padding: 0.5em; font-size: 1.2em; }
+
+/*navegador*/
+nav { background-color: #005853; min-height: 2em; }
+nav p { display: inline; }
+nav a:link, nav a:visited { text-decoration: none; color: #f1f16c; background-color: #027244; margin: 0.3em; }
+nav a:hover, nav a:active { text-decoration: none; color: #9bf5ff; background-color: #543683; margin: 0.3em; }
+
+/*principal: section:*/
+section { width: 75%; background-color: #deeebc; float: left; }
+section h1 { text-align: center; padding: 0.5em; color: olive; font-size: 1.4em; }
+section h2 { text-align: center; padding: 0.5em; color: grey; font-size: 1.2em; }
+section h3 { text-align: left; padding: 0.3em 3em; color: #663366; font-size: 1em;  }
+
+/*artículos: article*/
+article { margin: 0.5em 3em; padding: 0.5em 2em; background-color: white; border: 3px double aqua; }
+article p { text-align: justify; }
+
+/*propaganda: aside*/
+aside { width: 25%; float: left; }
+#anuncio1 { margin: 20px; padding: 10px; border: 2px solid blue; background-color: white; }
+#anuncio1 h1 { font-size: 1.1em; text-align: left; padding: 0.2em 0em; }
+#anuncio1 h2 { font-size: 1.5em; text-align: center; padding: 0.5em 0em; }
+#anuncio1 p { font-size: 0.9em; padding: 0.2em 1em; }
+
+/*pie de página: footer*/
+footer { clear: both; background-color: #ccffff; }
+footer h1 { text-align: center; font-size: 1.4em; color: navy; padding: 0.7em; }
+footer h2 { text-align: center; font-size: 1em; padding: 0.4em; }
+footer a { text-decoration: none; color: green; }
+</style>
+<header>
+  <h1>Pagina en HTML 5</h1>
+</header>
+<nav>
+<p><a href="#">Enlace 1</a></p>
+<p><a href="#">Enlace 2</a></p>
+<p><a href="#">Enlace 3</a></p>
+<p><a href="#">Enlace 4</a></p>
+</nav>
+<section>
+  <h1>WEB HTML y CSS</h1>
+  <h2>Un poco de cada</h2>
+  <h3>Codigo HTML</h3>
+	<article>
+	<p>¿Que es HTML?</p><br>
+
+<p>Definiendolo de forma sencilla, "HTML es el lenguaje que se utiliza para crear las paginas web a las que se accede mediante internet". Mas concretamente, HTML es el lenguaje con el que se "escriben" la mayoria de paginas web.</p><br>
+	<p>
+	Originalmente, las paginas HTML solo incluian informacion sobre sus contenidos de texto e imagenes. Con el desarrollo del estandar HTML, empezaron a incluir tambien informacion sobre el aspecto de sus contenidos: tipos de letra, colores y margenes.<br>
+
+La posterior aparicion de tecnologias como JavaScript, provocaron que las paginas HTML tambien incluyeran el codigo de las aplicaciones (scripts) que se utilizan para crear paginas web dinamicas.<br>
+
+Incluir en una misma pagina HTML los contenidos, el disenho y la programacion complica en exceso su mantenimiento. Normalmente, los contenidos y el disenho de la pagina web son responsabilidad de diferentes personas, por lo que es adecuado separarlos. CSS es el mecanismo que permite separar los contenidos definidos mediante XHTML y el aspecto que deben presentar esos contenidos:<br>
+
+Esquema pagina web en html<br>
+Otra ventaja de la separacion de los contenidos y su presentacion es que los documentos XHTML creados son mas flexibles, ya que se adaptan mejor a las diferentes plataformas: pantallas de ordenador, pantallas de dispositivos moviles, impresoras y dispositivos utilizados por personas discapacitadas.<br>
+
+De esta forma, utilizando exclusivamente XHTML se crean paginas web "feas" pero correctas. Aplicando CSS, se pueden crear paginas "bonitas" a partir de las paginas XHTML correctas.
+	</p>
+    
+   
+    
+	</article>
+  <h3>Codigos basicos de HTML</h3>
+	<article>
+	<p>
+< html >: Inicio del documento, le indica al navegador que lo siguiente debe ser interpretado como codigo HTML. Aunque en teoria lo que define el tipo de documento es el DOCTYPE.<br>
+< head >: Define la cabecera del documento HTML; a suele contener informacion que no se muestra directamente al usuario como, por ejemplo, el titulo de la ventana del navegador.<br>
+< body >: Define el contenido principal o cuerpo del documento. Esta es la parte que se muestra en el navegador; dentro pueden definirse propiedades comunes a toda la pagina.<br>
+ 
+ Dentro del cuerpo body es posible encontrar numerosas etiquetas. Por ejemplo:<br>
+
+< h1 > a < h6 >: Encabezados o titulos del documento con diferente relevancia.<br>
+< a >: Hipervinculo o enlace. Debe definirse el enlace mediante href.<br>
+< img >: Incluye una imagen. Requiere del atributo src, que indica la ruta en la que se encuentra la imagen.<br>
+< li >, < ol > y < ul >: Etiquetas para listas.<br>
+< strong >: Texto en negrita.<br>
+< em >: Texto en cursiva.<br>
+< del >: Texto tachado.<br>
+< u >: Texto subrayado.<br>
+ </p>
+	</article>
+  <h3>CSS la clave del disenho</h3>
+	<article>
+	<p>¿Que es CSS?<br>
+	<br>
+
+CSS (Cascading Stylesheets: Hojas de estilo en cascada). Es un lenguaje de diseño grafico con el que podemos definir y crear la presentacion de un documento escrito en un lenguaje de marcas, como HTML.Podemos establecer el diseño visual de las paginas web. <br>
+<br>
+CSS esta diseñado para marcar la separacion del contenido del documento y la forma en la que este esta presentado, incluyendo colores y tipos de fuentes. Podemos conseguir que varios documentos HTML compartan un mismo estilo usando una sola hoja de estilos separada en un archivo .css , reduciendo asi la complejidad y la repeticion de codigo.<br>
+<br>
+CSS esta creado en diferentes niveles. La primera especificacion fue CSS1 (1996), siendo la primera recomendada por el World Wide Web Consortium. El Nivel 2 de CSS necesito 9 años, desde Agosto de 2002 hasta Junio de 2011, para alcanzar el estado de Recomendacion. Esto fue debido al hecho de que algunas caracteristicas secundarias fueron retiradas de las especificaciones globales, con el fin de acelerar la normalizacion de las caracteristicas no problematicas. Formalmente, no existe un estandar de CSS3 por si solo, cada modulo es estandarizado independientemente, por lo que el estandar CSS consiste en CSS2.1 modificado. Se emplea la etiqueta < style > de HTML y solamente se pueden incluir en la cabecera del documento (solo dentro de la seccion < head >).<br>
+Selectores CSS<br>
+<br>
+Un selector CSS es el nexo de union entre la hoja de estilos y los documentos a los que se aplique dicha hoja. En CSS vamos a encontrar los siguientes tipos de selectores:<br>
+<br>
+Universales: Que seleccionan todos los elementos de la pagina. Se indica mediante un asterisco (*), aunque no se suelen usar mucho.<br>
+<br>
+De tipo o etiqueta: Selecciona todos los elementos de la pagina cuya etiqueta HTML coincide con el valor del selector<br>
+<br>
+Descendente: Selecciona los elementos que se encuentran dentro de otros elementos.<br>
+<br>
+De clase: Con este podemos por ejemplo aplicar estilo CSS a todo un parrafo.<br>
+<br>
+De ID: Permite seleccionar un elemento de la pagina a traves del valor de su atributo id.<br>
+<br>
+
+Ademas tenemos una serie de selectores mas avanzados: de hijos, adyacente y de atributos.</p>
+	</article>
+  <br/><br/>
+</section>
+<aside>
+   <div id="anuncio1">
+  	<h1>Si te ha gustado<h1>
+  	<h2>Siguenos en nuetras redes sociales:
+  	@alvaroleon <br>
+  	@manuulopez8</h2>
+   
+  	<p>Interesados llamar al telefono 648867435 ó
+  	contactar en 615368976<a href="mailto: xyz@xyzmail.com">alvaroleonnovoa@gmail.com</a></p>
+	</div>
+</aside>
+<footer>
+   <h1>Página del manual de HTML5 por Alvaro Leon y Manuel Lopez</h1>
+   <h2>Contacta con nosotros: email <a href="mailto:aprendeweb@ymail.com">manulopez@mail.com</a></h2>
+   <br/>
+</footer>
+</body>
+</html>
